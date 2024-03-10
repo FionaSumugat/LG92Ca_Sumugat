@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page2</title>
+</head>
+<body>
+    <img id="image" onclick="changeImage()" src="images/dog.jpg" width="350" height="350" style="margin-left:500px; margin-bottom:65px; margin-top:80px">
+
+    <button type="button" onclick="changeImage()" style="margin-left:600px">Change</button>
+    <button type="button" onclick="backImage()">Back</button>
+
+    <script>
+        function changeImage(){
+            image.src= "images/cat.jpg";
+        }
+        function backImage(){
+            image.src="images/dog.jpg";
+        }
+    </script>
+</body>
+</html>
